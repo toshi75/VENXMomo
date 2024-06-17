@@ -1,0 +1,13 @@
+#!/usr/bin/fontforge --quiet
+Open($1)
+Reencode("unicode")
+Save($1:r + ".sfd")
+Close()
+Quit()
+
+
+
+
+
+#
+

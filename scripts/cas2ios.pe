@@ -1,0 +1,62 @@
+#!/usr/bin/fontforge --quiet
+Open($1)
+Reencode("unicode")
+
+# $
+Select(0u0024)
+# *
+SelectMore(0u002a)
+# C
+SelectMore(0u0043)
+# J
+SelectMore(0u004a)
+# K
+SelectMore(0u004b)
+# S
+SelectMore(0u0053)
+# c
+SelectMore(0u0063)
+# f
+SelectMore(0u0066)
+# j
+SelectMore(0u006a)
+# k
+SelectMore(0u006b)
+# s
+SelectMore(0u0073)
+# |
+SelectMore(0u007c)
+Copy()
+
+Open($2)
+# $
+Select(0u0024)
+# *
+SelectMore(0u002a)
+#C
+SelectMore(0u0043)
+#J
+SelectMore(0u004a)
+#K
+SelectMore(0u004b)
+#S
+SelectMore(0u0053)
+#c
+SelectMore(0u0063)
+#f
+SelectMore(0u0066)
+#j
+SelectMore(0u006a)
+#k
+SelectMore(0u006b)
+#s
+SelectMore(0u0073)
+#|
+SelectMore(0u007c)
+Clear()
+Paste()
+
+Generate($2:r + ".ttf")
+Close()
+Quit()
+

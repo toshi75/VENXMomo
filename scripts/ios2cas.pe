@@ -1,0 +1,85 @@
+#!/usr/bin/fontforge --quiet
+# open Iosevka
+Open($1)
+Reencode("unicode")
+
+# #
+Select(0u0023)
+# %
+SelectMore(0u0025)
+# 0-9
+SelectMore(0u0030,0u0039)
+# ?
+SelectMore(0u003f)
+# @
+SelectMore(0u0040)
+# B
+SelectMore(0u0042)
+# D
+SelectMore(0u0044)
+# G
+SelectMore(0u0047)
+# N
+SelectMore(0u004e)
+# P
+SelectMore(0u0050)
+# Q
+SelectMore(0u0051)
+# R
+SelectMore(0u0052)
+# Z
+SelectMore(0u005a)
+# m
+SelectMore(0u006d)
+# n
+SelectMore(0u006e)
+# y
+SelectMore(0u0079)
+# z
+SelectMore(0u007a)
+Copy()
+
+# open Cascadia
+Open($2)
+Reencode("unicode")
+# #
+Select(0u0023)
+# %
+SelectMore(0u0025)
+# 0-9
+SelectMore(0u0030,0u0039)
+# ?
+SelectMore(0u003f)
+# @
+SelectMore(0u0040)
+# B
+SelectMore(0u0042)
+# D
+SelectMore(0u0044)
+# G
+SelectMore(0u0047)
+# N
+SelectMore(0u004e)
+# P
+SelectMore(0u0050)
+# Q
+SelectMore(0u0051)
+# R
+SelectMore(0u0052)
+# Z
+SelectMore(0u005a)
+# m
+SelectMore(0u006d)
+# n
+SelectMore(0u006e)
+# y
+SelectMore(0u0079)
+# z
+SelectMore(0u007a)
+Clear()
+Paste()
+
+Generate($2:r + ".ttf")
+Close()
+Quit()
+

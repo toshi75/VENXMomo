@@ -1,0 +1,24 @@
+#!/usr/bin/fontforge --quiet
+Open($1)
+Reencode("unicode")
+#SelectWorthOutputting()
+#ClearHints()
+#ClearInstrs()
+#UnlinkReference()
+#CanonicalStart()
+#Simplify()
+#Simplify()
+#Simplify()
+#Simplify()
+
+SelectWorthOutputting()
+UnlinkReference()
+ScaleToEm(800, 200)
+
+#SelectWorthOutputting()
+#RoundToInt()
+
+Generate($1:r + ".ttf")
+Close()
+Quit()
+

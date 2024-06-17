@@ -1,0 +1,10 @@
+#!/usr/bin/fontforge --quiet
+Open($1)
+Reencode("unicode")
+SelectWorthOutputting()
+Transform(100, 0, 20, 100, 0, 0)
+RoundToInt()
+
+Generate($1:r + ".ttf")
+Close()
+

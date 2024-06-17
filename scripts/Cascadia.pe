@@ -1,0 +1,109 @@
+#!/usr/bin/fontforge --quiet
+Open($1)
+Reencode("unicode")
+
+#SelectWorthOutputting()
+#ClearHints()
+#ClearInstrs()
+#UnlinkReference()
+#CanonicalStart()
+#Simplify()
+#Simplify()
+#Simplify()
+#Simplify()
+
+SelectWorthOutputting()
+UnlinkReference()
+
+ScaleToEm(800, 200)
+
+# $
+Select(0u0024) ;Clear()
+Select(0u0053) ;Copy()
+Select(0u0024) ;Paste()
+Select(0u005e) ;Copy()
+Select(0u0088) ;Paste()
+Select(0u0088) ;Scale(100,50)
+Select(0u0088) ;Move(0,270)
+Select(0u00a6) ;Copy()
+Select(0u0099) ;Paste()
+Select(0u0099) ;Scale(100,110)
+Select(0u0099) ;Copy()
+Select(0u0088) ;PasteInto()
+Select(0u0088) ;RemoveOverlap()
+Select(0u0088) ;Skew(15)
+Select(0u0088) ;Copy()
+Select(0u0024) ;PasteInto()
+Select(0u0024) ;RemoveOverlap()
+Select(0u0088) ;Clear()
+Select(0u0099) ;Clear()
+
+# 0
+Select(0u00d8) ;Copy()
+Select(0u0030) ;Paste()
+
+# 3
+Select(0u01b7) ;Copy()
+Select(0u0033) ;Paste()
+
+# D
+Select(0u00d0) ;Copy()
+Select(0u0044) ;Paste()
+
+# Yen
+Select(0u005c) ;Copy()
+Select(0u00a5) ;Paste()
+
+# | 切れ目入りに
+Select(0u00a6) ;Copy()
+Select(0u007c) ;Paste()
+
+# ~ 上方へ
+Select(0u007e) ;Move(0,300)
+
+# M => W
+Select(0u004d) ;Copy()
+Select(0u0057) ;Paste()
+Select(0u0057) ;VFlip()
+Select(0u0057) ;HFlip()
+RoundToInt()
+
+# M => w
+Select(0u004d) ;Copy()
+Select(0u0077) ;Paste()
+Select(0u0077) ;VFlip()
+Select(0u0077) ;HFlip()
+Select(0u0077) ;Scale(100,75)
+Move(0,-88)
+RoundToInt()
+
+# Z -> Z cross-bar
+Select(0u00af) ;Copy()
+Select(0u0088) ;Paste()
+Select(0u0088) ;Transform(100, -65, 0, 100, 0, -12000)
+Select(0u0088) ;SetWidth(600)
+Select(0u0088) ;Copy()
+Select(0u005a) ;PasteInto()
+Select(0u005a)
+RoundToInt()
+RemoveOverlap()
+RoundToInt()
+Select(0u0088) ;Clear()
+
+# z -> z cross-bar
+Select(0u00af) ;Copy()
+Select(0u0088) ;Paste()
+Transform(75, -52, 0, 100, 5500, -23500) ;SetWidth(600)
+Copy()
+Select(0u007a) ;PasteInto()
+Select(0u007a)
+RoundToInt()
+RemoveOverlap()
+RoundToInt()
+Select(0u0088) ;Clear()
+
+
+Generate($1:r + ".ttf")
+Close()
+Quit()
+

@@ -1,0 +1,9 @@
+[Desktop Entry]
+Icon=./.src.svg
+
+[Dolphin]
+SortHiddenLast=true
+if [[ "" -eq 1 ]]
+Timestamp=2024,06,17,22,07,09.670
+Version=4
+VisibleRoles=Icons_text,Icons_size
