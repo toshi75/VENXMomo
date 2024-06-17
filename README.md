@@ -1,5 +1,5 @@
 # VENXMomo
-Fonts for programing. Iosevka + Biz UDGothic. Using script of Great works, UDEVGothic.
+Fonts for programing. Iosevka + CascadiaMono + Biz UDGothic. Using script of Great works, UDEVGothic.
 
 https://github.com/yuru7/udev-gothic
 を使わせていただきました。
