@@ -11,8 +11,11 @@ Iosevkaを私好みに作って、さらに余計なグリフの入れ替えを�
 CVDXMomoはCascadiaCode使用部分についてはそのまま使っていますので、イタリック体です。
 
 VENXMomo: Iosevka + CascadiaCode + BIZUDゴシック
+
 CJODMomo: CascadiaCode           + BIZUDゴシック
+
 CVDXMomo: CascadiaCode(Orig.)    + BIZUDゴシック
+
 IENEMomo: Iosevka                + BIZUDゴシック
 
 素人のスクリプトなので、もし止まってしまうようなら適宜書き直してご使用ください。
