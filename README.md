@@ -4,6 +4,8 @@ Fonts for programing. Iosevka + CascadiaMono + Biz UDGothic. Using script of Gre
 https://github.com/yuru7/udev-gothic
 を使わせていただきました。
 
+安易にscriptの背乗りをするためにItalicとしていますが、「斜体(Oblique)」になってます。
+
 Iosevkaを私好みに作って、さらに余計なグリフの入れ替えをして、BIZ UDゴシックと合わせました。
 「私好み」の部分を排除すれば、いろいろとつかいまわせるかとおもいます。
 「私好み」の部分はサンプル画像を見ていただければと。
